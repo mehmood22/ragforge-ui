@@ -17,6 +17,56 @@ This project provides a lightweight visual interface for interacting with the RA
 - Explicit insufficient-context handling
 - Configurable backend API URL
 
+## Screenshots
+
+The following screenshots demonstrate RAGForge running locally
+with its Streamlit interface and FastAPI backend.
+
+### Conversational RAG
+
+Context-aware follow-up questions, persistent conversations,
+page-level source citations, and insufficient-context handling.
+
+![Conversational RAG](docs/screenshots/conversation.png)
+
+### Semantic Search
+
+Vector similarity search with configurable Top-K retrieval,
+relevance scores, page numbers, and document chunks.
+
+![Semantic Search](docs/screenshots/semantic-search.png)
+
+## Backend Engineering and Evaluation
+
+The Streamlit interface communicates with the
+[RAGForge backend](https://github.com/mehmood22/ragforge)
+through its REST APIs.
+
+### API Documentation
+
+FastAPI-generated OpenAPI documentation.
+
+![API Documentation](docs/screenshots/api-documentation.png)
+
+### LangSmith Evaluation
+
+Evaluation of grounded answers, evidence coverage,
+citation validity, and correct abstention.
+
+![Evaluation Summary](docs/screenshots/evaluation-summary.png)
+
+![Evaluation Details](docs/screenshots/evaluation-details.png)
+
+Results are based on controlled synthetic evaluation datasets
+and do not represent universal answer accuracy.
+
+### Continuous Integration
+
+The backend uses GitHub Actions for automated code quality
+checks, Docker integration tests, and production image builds.
+
+![CI Pipeline](docs/screenshots/ci-pipeline.png)
+
 ## Technology Stack
 
 - Python
